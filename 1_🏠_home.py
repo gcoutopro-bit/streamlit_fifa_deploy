@@ -17,7 +17,7 @@ st.markdown("# FIFA23 OFFICIAL DATASET! ⚽")
 st.sidebar.markdown("Desenvolvido por Gabriel Martins Couto")
 
 # Botão para acessar o dataset no Kaggle
-btn = st.button("Acesse os dados no Kaggle!")
+btn = st.link_button("Acesse os dados no Kaggle!", "https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database")
 
 # Se o botão for clicado, abre o link do Kaggle em uma nova aba
 if btn:
