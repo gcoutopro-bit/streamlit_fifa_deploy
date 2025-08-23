@@ -45,7 +45,7 @@ st.markdown(
 # Verifica se os dados já foram carregados no session_state
 if "data" not in st.session_state:
     # Lê o dataset CSV e define a primeira coluna como índice
-    df_data = pd.read_csv("datasets\CLEAN_FIFA23_official_data.csv", index_col=0)
+    df_data = pd.read_csv("datasets/CLEAN_FIFA23_official_data.csv", index_col=0)
     
     # Filtra os jogadores cujo contrato é válido a partir do ano atual
     df_data = df_data[df_data["Contract Valid Until"] >= datetime.today().year]
